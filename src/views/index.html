@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket + NodeJS VR</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <h1>WebSocket + NodeJS VR</h1>
+    <section id="message"></section>
+    <form onsubmit="return addMessage(this);" class="form" method="post">
+        <input type="text" name="nickname" id="nickname" placeholder="Nick">
+        <textarea name="text" id="text" placeholder="Mensaje..."></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

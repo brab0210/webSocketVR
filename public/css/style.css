@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#message{
+    width: 95%;
+    max-width: 400px;
+    height: 350px;
+    margin: 1rem ;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    box-shadow: 0 0 20px #ccc inset;
+}
+
+.message{
+    margin: 20px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.form input[type=text]{ 
+    padding-left: 3px;
+    width: 150px;
+    margin-bottom: 0.35rem;
+}
+
+textarea{
+    width: 250px;
+    height: 80px;
+    margin-bottom: 0.35rem;
+    padding-left: 3px;
+}
+
+.form input[type=submit]{ 
+    padding-left: 3px;
+    width: 75px;
+    font-weight: bold;
+}
